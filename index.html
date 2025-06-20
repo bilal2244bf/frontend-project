@@ -3,9 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>e-commerce project</title>
 </head>
 <body>
-    <h1>hello git</h1>
+    <header>
+        <h1>E-Commerce</h1>
+        <ul>
+            <li><button>sidebar</button></li>
+            <li><button>search</button></li>
+            <li><a href="/loginpage.html"target="_blank "> login/signup </a></li>
+            <li><button>cart</button></li>
+        </ul>      
+        <aside>
+            <nav>
+            <ul>
+                <li><a href="/men.html" target="_blank ">men</a></li>
+                <ul>
+                    <li><a href="/men.html.#shirts" target="_blank ">shirts</a></li>
+                    <li><a href="/men.html#pants" target="_blank ">pants</a></li>
+                    <li><a href="/men.html#jackets" target="_blank ">jackets</a></li>
+                    <li><a href="/men.html#footwear" target="_blank ">footwear</a></li>
+                </ul>
+                <li><a href="/women.html"target="_blank ">women</a></li>
+                <ul>
+                    <li><a href="/women.html"target="_blank ">pants</a></li>
+                    <li><a href="/women.html"target="_blank ">shirts</a></li>
+                    <li><a href="/women.html"target="_blank ">footwear</a></li>
+                    <li><a href="/women.html"target="_blank ">footwear</a></li>
+
+                </ul>
+                <li><a href="/kids.html" target="_blank " >kids</a> </li>
+                <ul>
+                    <li><a href="/kids.html" target="_blank"  > dresses</a></li>
+                    <li><a href="/kids.html" target="_blank"  > pants</a></li>
+                    <li><a href="/kids.html" target="_blank"  > co-ord sets</li>
+                    <li><a href="/kids.html" target="_blank"  > footwear</a></li>
+                </ul>
+            </ul>
+            </nav>
+        </aside>
+                      <!-- LOGIN + DYNAMIC ADD SUBCATEGORY -->
+        <section class="admin-panel">
+             <input type="email" placeholder="enteremail" name="" id="">
+             <input type="password" id="admin-password" placeholder="Enter admin password" />
+             <button onclick="adminLogin()">Login</button> <!--admin login defined in JS-->
+
+         <form id="add-subcategory-form" >
+           <label for="main-category">Select Main Category:</label>
+           <select id="main-category">
+                 <option value="">-- Choose Category --</option>
+                 <option value="men">Men</option>
+                 <option value="women">Women</option>
+                 <option value="kids">Kids</option>
+           </select>
+
+          <label for="new-subcategory">New Subcategory Name:</label>
+           <input type="text" id="new-subcategory" placeholder="e.g. Hoodies" />
+            <button type="submit">Add Subcategory</button>
+        </form>
+      </section>
+     </header>
+    
+
+      <main id="hero section"><!--for background images-->
+             <!--main section of background images would be added here-->
+      </main>
+
+    <footer>
+        <ul>
+          <li><a href="/loginpage.html"> login/signup</a></li>
+          <li><a href="/aboutus.html">About Us </a></li>
+          <li><a href="FAQ's.html"> </a></li>
+          <li><a href="Shipping & Deliveries.html"> </a></li>
+        </ul>
+        <small>@ copyrights reserved by E-Commerce</small>
+    </footer>
+
+<!--sample code-->
+
+  
 </body>
 </html>
